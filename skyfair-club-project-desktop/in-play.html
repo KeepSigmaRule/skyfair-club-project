@@ -1,0 +1,276 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Skyfair</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javaScript" src="js/jquery-1.9.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+<!-- Menu Wrap start-->
+<div class="top">
+  <div class="header full-wrap">
+    <h1><a href="/">SKYFAIR </a></h1>
+    <div class="search-wrap">
+      <div>
+        <input class="search-input" type="text" placeholder="Search Events">
+      </div>
+    </div>
+    <ul class="account-wrap">
+      <li class="main-wallet"> <a href="#multiBalancePop" class="a-wallet">
+        <ul>
+          <li><span>Main Balance</span> <span >PHK 0.00</span></li>
+          <li><span>Exposure</span> <span >0.00</span></li>
+          <li class="nums">+<span >5</span></li>
+        </ul>
+        <div class="wallet-detail" >
+          <div class="wallet-detail-group">
+            <dl class="wallet-detail-content">
+              <dt>Main Balance</dt>
+              <dd class="wallet-balance-num"><span class="badge-currency">USD</span><span >0.00</span></dd>
+              <dd class="wallet-exposure">Exposure <span >0.00</span></dd>
+            </dl>
+          </div>
+          <div class="wallet-detail-group"> </div>
+          <div class="btn-box">
+            <button class="btn">Close</button>
+          </div>
+        </div>
+        </a> <a  class="a-refresh" href="#" title="Refresh Main Wallet"><img src="images/refresh1.png"></a> </li>
+      <li class="account" ><a id="accountPopup">My Account </a>
+        <ul id="account_pop" style="display: none;">
+          <li>
+            <h4> demo01 <span class="gmt" title="Time Zone">GMT+5:30</span> </h4>
+          </li>         <li><a href="profile.html"  target="_blank">My Profile </a></li>
+          <li><a href="balance-overview.html" target="_blank">Balance Overview </a></li>
+          <li><a href="account-statement.html" target="_blank">Account Statement </a></li>
+          <li><a href="my-bets.html" target="_blank">My Bets </a></li>
+          <li><a href="bet-history.html"  target="_blank">Bets History </a></li>
+          <li><a href="profit-loss.html" target="_blank">Profit &amp; Loss </a></li>
+          <li class="logout"><a>LOGOUT<img src="https://statics3.skyfair.club/images/transparent.gif"></a> </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  
+  <!-- Menu Wrap -->
+  <div class="menu-wrap">
+    <div class="full-wrap">
+      <ul  class="menu">
+        <li><a  href="home1.html">Home </a></li>
+        <li><a href="in-play.html" class="select">In-Play </a></li>
+        <li><a href="multi-market.html">Multi Markets </a></li>
+        <li> <a href="cricket.html"> <span class="tag-live" ><strong></strong>1</span> Cricket </a> </li>
+        <li> <a href="soccer.html"> <span  class="tag-live" ><strong></strong>1</span> Soccer </a> </li>
+        <li> <a href="tennis.html"> <span  class="tag-live" ><strong></strong>7</span> Tennis </a> </li>
+        <li> <a> Virtual Cricket </a> </li>
+        <li> <a > <span class="tag-live"><strong></strong>5</span> E-Soccer </a> </li>
+        <li> <a href="basketball.html"> <span class="tag-live" ><strong></strong>0</span> Basketball </a> </li>
+        <li><a>Binary </a></li>
+        <li> <a> Sky Trader </a> </li>
+        <li><a href="horse-racing.html">Horse Racing </a></li>
+        <li class="dark_menu-li"><a class="casino tag-new">Casino </a> </li>
+        <li><a>Result </a></li>
+      </ul>
+      <ul class="setting-wrap">
+        <li><a class="one_click">One Click Bet </a></li>
+        <li><a class="setting" >Setting <img src="https://statics3.skyfair.club/images/transparent.gif"></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- Menu Wrap end --> 
+
+<!--body section-->
+<div class="full-wrap">
+  <div class="col-center inplay">
+    <div class="marquee-box">
+      <h4>News</h4>
+      <marquee class="marquee">
+      <a><span>06 Mar 2023</span>Event :- Bangladesh v England ... Market :- 50 Over BAN ' 163 - 167 ' ( IST 11:15:25 - 11:17:03 ) ... Bets Voided Because Wrong Rate Offered Bymistake ... Sorry for the Inconvenience&nbsp;Caused</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a><span>21 Jan 2022</span>Match :- Minister Group Dhaka vs Khulna Tigers .. Market .. Bookmaker .. Selection :- Khulna Tigers ' 2 - 6 ' ( IST 21:18:35 - 21:18:38 ) Bets Voided Because Wrong Odds Offered Bymistake ... Sorry for the Inconveniences Caused</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a><span>04 Sep 2021</span>WHITE LABEL OF SKYEXCHANGE IS AVAILABLE NOW - CONTACT YOUR UPLINE.</a>
+      </marquee>
+    </div>
+    <ul id="ul-menu-list" class="tab col3">
+      <li><a id="tabone" class="select">In-Play </a></li>
+      <li><a id="tabtwo" >Today </a></li>
+      <li><a id="tabthree">Tomorrow </a></li>
+    </ul>
+    
+    <!--today filter -->
+    <div  class="function-wrap hide-first-show-s-t">
+      <ul class="filter-list">
+        <li class="filter-head">Sport Filters:</li>
+        <li class="filter-content"> <span class="filter-first">Basketball</span><span>Cricket</span><span >E-Soccer </span><span>Soccer</span><span>Tennis</span></li>
+        <li class="filter-btn"><a class="btn">Filter</a></li>
+      </ul>
+    </div>
+    <!--today filter -->
+    
+    <div class="over-wrap"> 
+      
+      <!--In Play tab start-->
+      <div class="tab-s1">
+        <div class="game-wrap col3">
+          <h3> <a class="to-expand">Cricket</a> </h3>
+          <ul class="slip-head">
+            <li class="col-game"></li>
+            <li class="col-matched">Matched</li>
+            <li class="col-visit">1</li>
+            <li class="col-draw" style="">x</li>
+            <li class="col-home">2</li>
+            <li class="col-info"></li>
+          </ul>
+          <div class="game-list">
+            <dl class="game-list-col">
+              <dt> <img id="playIcon" class="icon-in_play" src="https://statics3.skyfair.club/images/transparent.gif"> <a>Leeward Islands Hurricanes<span>v</span>Barbados Pride</a> <span class="game-list-time"><span class="in_play">In-Play</span></span> <span class="game-sportsbook">Premium Cricket</span> </dt>
+              <dd  class="col-matched">PHK0</dd>
+              <dd class="col-visit"> <a class="btn-back">&nbsp;</a> <a  class="btn-lay" >&nbsp;</a> </dd>
+              <dd class="col-draw"> <a  class="btn-back" >--</a> <a class="btn-lay">--</a> </dd>
+              <dd class="col-home"> <a class="btn-back" >&nbsp;</a> <a class="btn-lay">&nbsp;</a> </dd>
+              <dd class="col-info"> <a  class="add-pin" title="Add to Multi Markets">Pin</a> </dd>
+            </dl>
+          </div>
+        </div>
+        <div class="game-wrap col3">
+          <h3> <a class="to-expand">Soccer</a> </h3>
+          <ul class="slip-head">
+            <li class="col-game"></li>
+            <li class="col-matched">Matched</li>
+            <li class="col-visit">1</li>
+            <li class="col-draw" style="">x</li>
+            <li class="col-home">2</li>
+            <li class="col-info"></li>
+          </ul>
+          <div  class="game-list">
+            <dl class="game-list-col">
+              <dt> <img id="playIcon" class="icon-no_play" src="https://statics3.skyfair.club/images/transparent.gif"> <a >Adelaide United (W)<span>v</span>Newcastle Jets (W)</a> <span class="game-list-time">Starting in 9' </span> </dt>
+              <dd class="col-matched">PHK0</dd>
+              <dd  class="col-visit"> <a class="btn-back" >&nbsp;</a> <a class="btn-lay" >&nbsp;</a> </dd>
+              <dd class="col-draw"> <a class="btn-back" >--</a> <a  class="btn-lay" >--</a> </dd>
+              <dd class="col-home"> <a  class="btn-back" >&nbsp;</a> <a  class="btn-lay">&nbsp;</a> </dd>
+              <dd class="col-info"> <a class="add-pin" title="Add to Multi Markets">Pin</a> </dd>
+            </dl>
+            <dl class="game-list-col">
+              <dt> <img id="playIcon" class="icon-in_play" src="https://statics3.skyfair.club/images/transparent.gif"> <a>Shefa-amr FC<span>v</span>Hapoel Ironi Karmiel</a> <span class="game-list-time"><span class="in_play">In-Play</span></span> </dt>
+              <dd class="col-matched">PHK107,145</dd>
+              <dd  class="col-visit">
+                <div class="suspend" > <span>Suspend</span> </div>
+                <a  class="btn-back" >&nbsp;</a> <a class="btn-lay" >&nbsp;</a> </dd>
+              <dd class="col-draw">
+                <div class="suspend"> <span>Suspend</span> </div>
+                <a  class="btn-back">--</a> <a  class="btn-lay" >--</a> </dd>
+              <dd class="col-home">
+                <div class="suspend" style=""> <span>Suspend</span> </div>
+                <a  class="btn-back" >&nbsp;</a> <a class="btn-lay">&nbsp;</a> </dd>
+              <dd class="col-info"> <a  class="add-pin" title="Add to Multi Markets">Pin</a> </dd>
+            </dl>
+          </div>
+        </div>
+        <div class="game-wrap" >
+          <h3> <a class="to-expand">Tennis</a> </h3>
+          <ul class="slip-head">
+            <li class="col-game" ></li>
+            <li class="col-matched">Matched</li>
+            <li class="col-visit">1</li>
+            <li class="col-home">2</li>
+            <li class="col-info"></li>
+          </ul>
+          <div  class="game-list">
+            <dl class="game-list-col">
+              <dt> <img class="icon-in_play" src="https://statics3.skyfair.club/images/transparent.gif"> <a>Alexandrova, Ekaterina SRL<span>v</span>Potapova, Anastasia SRL</a> <span class="game-list-time"><span class="in_play">In-Play</span></span> <span class="game-E"><i></i>Tennis</span> <!-- icon for fancy bet --> 
+                <!-- icon for fancy bet --> 
+                <span class="game-sportsbook">Premium Cricket</span> </dt>
+              <dd class="col-matched">PHK0</dd>
+              <dd  class="col-visit"> <a class="btn-back" >&nbsp;</a> <a class="btn-lay" >&nbsp;</a> </dd>
+              <dd class="col-draw"> <a class="btn-back" >--</a> <a  class="btn-lay" >--</a> </dd>
+              <dd class="col-home"> <a  class="btn-back" >&nbsp;</a> <a  class="btn-lay">&nbsp;</a> </dd>
+              <dd class="col-info"> <a class="add-pin" title="Add to Multi Markets">Pin</a> </dd>
+            </dl>
+          </div>
+        </div>
+        <div class="game-wrap col3">
+          <h3> <a class="to-expand">E-Soccer </a> </h3>
+          <ul class="slip-head">
+            <li class="col-game"></li>
+            <li class="col-matched">Matched</li>
+            <li class="col-visit">1</li>
+            <li class="col-draw" style="">x</li>
+            <li class="col-home">2</li>
+            <li class="col-info"></li>
+          </ul>
+          <div class="game-list">
+            <dl class="game-list-col" >
+              <dt > <img id="playIcon" class="icon-in_play" src="https://statics3.skyfair.club/images/transparent.gif"> <a>Croatia (M1Kk0)<span>v</span>Poland (Gil_24)</a> <span class="game-list-time"><span class="in_play">In-Play</span></span> <span class="game-E"><i></i>e-Soccer</span> </dt>
+              <dd class="col-matched">PHK0</dd>
+              <dd  class="col-visit"> <a class="btn-back" >&nbsp;</a> <a class="btn-lay" >&nbsp;</a> </dd>
+              <dd class="col-draw"> <a class="btn-back" >--</a> <a  class="btn-lay" >--</a> </dd>
+              <dd class="col-home"> <a  class="btn-back" >&nbsp;</a> <a  class="btn-lay">&nbsp;</a> </dd>
+              <dd class="col-info"> <a class="add-pin" title="Add to Multi Markets">Pin</a> </dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+      <!--In Play tab end--> 
+      
+      <!--today tab start-->
+      
+      <div class="sport_list-wrap tab-s1 hide-first-s">
+        <dl class="game-list-col">
+          <dt class="time">12:14</dt>
+          <dd>E-Soccer <img class="fromto" src="/images/transparent.gif">--<img class="fromto" src="/images/transparent.gif"><a><strong>FC Barcelona (Rodja)</strong> v <strong>Atletico Madrid (Sule)</strong></a></dd>
+        </dl>
+      </div>
+      
+      <!--today tab end--> 
+      
+      <!--Tommorrow tab start-->
+      <div class="sport_list-wrap tab-s1 hide-first-s">
+        <dl class="game-list-col">
+          <dt class="time">00:00</dt>
+          <dd >Soccer<img class="fromto" src="/images/transparent.gif">Austrian Amateurs<img class="fromto" src="/images/transparent.gif"><a ><strong>SC Mannsdorf</strong> v <strong>Wiener Victoria</strong></a></dd>
+        </dl>
+      </div>
+      <!--Tommorrow Tab End--> 
+    </div>
+  </div>
+  <!-- end col-center --> 
+  
+  <!-- Right Column -->
+  <div class="col-right">
+    <div class="slip-wrap no-open-bet_slip">
+      <h3> <a class="to-expand">Bet Slip </a> </h3>
+      <div class="message-bet"> </div>
+      <p>Click on the odds to add selections to the betslip. </p>
+    </div>
+  </div>
+</div>
+<!--body section--> 
+<script>
+$("#ul-menu-list li").click(function () {
+    $('.tab-s1').hide().eq($(this).index()).show();
+	  $('.hide-first-show-s-t').show().eq($(this).index()).hide();
+	
+	
+});
+</script> 
+<script>
+$(document).ready(function () {
+    $(".tab li a").click(function () {
+        $(".tab li a").removeClass("select");
+        $(this).addClass("select");
+    });
+});
+</script>
+<script>
+$("#accountPopup").click(function(){
+  $("#account_pop").toggle();
+});
+</script>
+</body>
+</html>

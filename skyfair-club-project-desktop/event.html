@@ -1,0 +1,338 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Skyfair</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javaScript" src="js/jquery-1.9.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+<!-- Menu Wrap start-->
+<div class="top">
+  <div class="header full-wrap">
+    <h1><a href="/">SKYFAIR </a></h1>
+    <div class="search-wrap">
+      <div>
+        <input class="search-input" type="text" placeholder="Search Events">
+      </div>
+    </div>
+    <ul class="account-wrap">
+      <li class="main-wallet"> <a href="#multiBalancePop" class="a-wallet">
+        <ul>
+          <li><span>Main Balance</span> <span >PHK 0.00</span></li>
+          <li><span>Exposure</span> <span >0.00</span></li>
+          <li class="nums">+<span >5</span></li>
+        </ul>
+        <div class="wallet-detail" >
+          <div class="wallet-detail-group">
+            <dl class="wallet-detail-content">
+              <dt>Main Balance</dt>
+              <dd class="wallet-balance-num"><span class="badge-currency">USD</span><span >0.00</span></dd>
+              <dd class="wallet-exposure">Exposure <span >0.00</span></dd>
+            </dl>
+          </div>
+          <div class="wallet-detail-group"> </div>
+          <div class="btn-box">
+            <button class="btn">Close</button>
+          </div>
+        </div>
+        </a> <a  class="a-refresh" href="#" title="Refresh Main Wallet"><img src="images/refresh1.png"></a> </li>
+      <li class="account" ><a id="accountPopup">My Account </a>
+        <ul id="account_pop" style="display: none;">
+          <li>
+            <h4> demo01 <span class="gmt" title="Time Zone">GMT+5:30</span> </h4>
+          </li>
+          <li><a href="profile.html"  target="_blank">My Profile </a></li>
+          <li><a href="balance-overview.html" target="_blank">Balance Overview </a></li>
+          <li><a href="account-statement.html" target="_blank">Account Statement </a></li>
+          <li><a href="my-bets.html" target="_blank">My Bets </a></li>
+          <li><a href="bet-history.html"  target="_blank">Bets History </a></li>
+          <li><a href="profit-loss.html" target="_blank">Profit &amp; Loss </a></li>
+          <li class="logout"><a>LOGOUT<img src="https://statics3.skyfair.club/images/transparent.gif"></a> </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  
+  <!-- Menu Wrap -->
+  <div class="menu-wrap">
+    <div class="full-wrap">
+      <ul  class="menu"><li><a  href="home1.html">Home </a></li>
+        <li><a href="in-play.html" class="select">In-Play </a></li>
+        <li><a href="multi-market.html">Multi Markets </a></li>
+        <li> <a href="cricket.html"> <span class="tag-live" ><strong></strong>1</span> Cricket </a> </li>
+        <li> <a href="soccer.html"> <span  class="tag-live" ><strong></strong>1</span> Soccer </a> </li>
+        <li> <a href="tennis.html"> <span  class="tag-live" ><strong></strong>7</span> Tennis </a> </li>
+        <li> <a> Virtual Cricket </a> </li>
+        <li> <a > <span class="tag-live"><strong></strong>5</span> E-Soccer </a> </li>
+        <li> <a href="basketball.html"> <span class="tag-live" ><strong></strong>0</span> Basketball </a> </li>
+        <li><a>Binary </a></li>
+        <li> <a> Sky Trader </a> </li>
+        <li><a href="horse-racing.html">Horse Racing </a></li>
+        <li class="dark_menu-li"><a class="casino tag-new">Casino </a> </li>
+        <li><a>Result </a></li>
+      </ul>
+      <ul class="setting-wrap">
+        <li><a class="one_click">One Click Bet </a></li>
+        <li><a class="setting" >Setting <img src="https://statics3.skyfair.club/images/transparent.gif"></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- Menu Wrap end --> 
+
+<!--body section-->
+<div class="full-wrap">
+  <div class="col-left">
+    <div class="sub_path hei-100">
+      <div class="path"> Sports </div>
+      <ul class="menu-list">
+        <li class="path-last" > <a href="">All Sports</a> </li>
+        <li><a href="">Soccer</a></li>
+        <li ><a>Japanese Soccer</a></li>
+        <li ><a>Japanese J League</a></li>
+        <li ><a>Fixtures 18 Mar</a></li>
+        <li class="menu-select-head"><a>Nagoya v FC Tokyo</a></li>
+        <li> <a href="" class="select"><img class="icon-in_play" src="/images/transparent.gif"> Match Odds</a> </li>
+        <li> <a href=""><img class="icon-in_play" src="/images/transparent.gif"> Over/Under 0.5 Goals</a> </li>
+        <li> <a  href=""><img class="icon-in_play" src="/images/transparent.gif"> Over/Under 1.5 Goals</a> </li>
+        <li> <a href=""><img class="icon-in_play" src="/images/transparent.gif"> Over/Under 2.5 Goals</a> </li>
+        <li> <a href=""><img class="icon-in_play" src="/images/transparent.gif"> Over/Under 3.5 Goals</a> </li>
+        <li> <a href=""><img class="icon-in_play" src="/images/transparent.gif"> Over/Under 4.5 Goals</a> </li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-center markets">
+    <div class="over-wrap live-match hei-over-wrap">
+      <div  class="game-head">
+        <div class="match-odds">Match Odds<img src="images/img-match_odds.png"></div>
+        <ul class="game-info">
+          <li><img class="icon-time" src="images/icon-time (1).png"> Sun 19 Mar, 02:30</li>
+        </ul>
+        <dl class="game-matched">
+          <dt>Matched </dt>
+          <dd >PTE 0</dd>
+        </dl>
+      </div>
+      <div class="bets-wrap asiahadicap"> <span class="refer_only">3 selections</span>
+        <table class="bets">
+          <tbody>
+            <tr class="bet-all">
+              <td></td>
+              <td  class="refer-bet" colspan="2">100.7%</td>
+              <td><a class="back-all"><span>Back all</span></a></td>
+              <td><a class="lay-all"><span>Lay all</span></a></td>
+              <td class="refer-book" colspan="2">96.6%</td>
+            </tr>
+            <tr>
+              <th > <p><a><img class="icon-predict" src="images/icon-chart.png"></a>Nagoya</p>
+              </th>
+              <td id="suspend" colspan="6" class="suspend" style="display: none;"><span>Suspend</span></td>
+              <td id="closed" colspan="6" class="suspend" style="display: none;"><span>Closed</span></td>
+              <td id="nonRunner" colspan="6" class="suspend" style="display: none;"><span>Non Runner</span></td>
+              <td class="back-3"><a>7.2<span>339</span></a></td>
+              <td  class="back-2"><a>7.4<span>298</span></a></td>
+              <td  class="back-1" ><a>7.6<span>31</span></a></td>
+              <td class="lay-1"><a>8.8<span>5</span></a></td>
+              <td class="lay-2"><a>9<span>19</span></a></td>
+              <td class="lay-3"><a>9.2<span>60</span></a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="bets-wrap  bookmaker_bet" >
+        <table class="bets bets-bookmaker" >
+          <colgroup>
+          <col span="1" width="280">
+          <col span="1" width="70">
+          <col span="1" width="70">
+          <col span="1" width="70">
+          <col span="1" width="70">
+          <col span="1" width="70">
+          <col span="1" width="70">
+          </colgroup>
+          <tbody>
+            <tr class="special_bet">
+              <td colspan="7"><h3> <a class="add-pin">Add Pin</a> Bookmaker Market
+                  <p>| Zero Commission</p>
+                </h3>
+                <dl class="fancy-info">
+                  <dt><span>Min</span></dt>
+                  <dd> 1.00</dd>
+                  <dt><span>Max</span></dt>
+                  <dd> 197.00</dd>
+                </dl></td>
+            </tr>
+            <tr class="bet-all">
+              <td colspan="3"></td>
+              <td>Back</td>
+              <td>Lay</td>
+              <td class="refer-book" colspan="2"></td>
+            </tr>
+            <tr>
+              <th class="predict"> <p>The Draw</p>
+              </th>
+              <td  colspan="3"><dl class="back-gradient">
+                  <dd>
+                    <p>1.27</p>
+                  </dd>
+                  <dd>
+                    <p>1.28</p>
+                  </dd>
+                  <dd ><a>1.29</a></dd>
+                </dl></td>
+              <td  colspan="3"><dl class="lay-gradient">
+                  <dd  ><a>1.39</a></dd>
+                  <dd>
+                    <p>1.4</p>
+                  </dd>
+                  <dd >
+                    <p>1.41</p>
+                  </dd>
+                </dl></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <ul  class="tab-markets">
+        <li><a class="select">Popular</a></li>
+        <li><a>Goals</a></li>
+      </ul>
+      <div  class="event-left">
+        <div class="game-wrap">
+          <h3> <a class="add-pin"></a> <a class="to-expand">Over/Under 0.5 Goals <img class="icon-irun" src="images/icon-irun.png"></a> </h3>
+          <ul class="slip-head">
+            <li class="col-game" >Matched: PTE 22,577</li>
+            <li class="col-home"><span>Back</span> <span>Lay</span></li>
+          </ul>
+          <div class="game-list">
+            <dl class="game-list-col">
+              <dt><a><img class="icon-predict" src="images/icon-chart.png"></a>Under 0.5 Goals<br>
+              </dt>
+              <dd class="col-home"> <a class="btn-back">1.59</a> </dd>
+            </dl>
+            <dl class="game-list-col">
+              <dt><a><img class="icon-predict" src="images/icon-chart.png"></a>Over 0.5 Goals<br>
+              </dt>
+              <dd class="col-home"> <a class="btn-back">2.7</a> <a class="btn-lay">2.8</a> </dd>
+            </dl>
+            <a  class="more">View Full Market </a> </div>
+        </div>
+      </div>
+      <div  class="event-right">
+        <div class="game-wrap">
+          <h3> <a class="add-pin"></a> <a class="to-expand" >Over/Under 2.5 Goals <img class="icon-irun" src="images/icon-irun.png"></a> </h3>
+          <ul class="slip-head">
+            <li class="col-game">Matched: PTE 4,009</li>
+            <li class="col-home"><span>Back</span> <span>Lay</span></li>
+          </ul>
+          <div  class="game-list">
+            <dl class="game-list-col">
+              <dt><a ><img class="icon-predict" src="images/icon-chart.png"></a>Under 2.5 Goals<br>
+              </dt>
+              <dd class="col-home"> <a class="btn-back" >1.36</a> <a class="btn-lay">1.38</a> </dd>
+            </dl>
+            <dl  class="game-list-col">
+              <dt><a><img class="icon-predict" src="images/icon-chart.png"></a>Over 2.5 Goals<br>
+              </dt>
+              <dd class="col-home"> <a class="btn-back">3.65</a> <a class="btn-lay">3.75</a> </dd>
+            </dl>
+            <a  class="more">View Full Market </a> </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <div  class="event-left">
+        <div class="game-wrap">
+          <h3> <a class="add-pin"></a> <a class="to-expand">Over/Under 0.5 Goals <img class="icon-irun" src="images/icon-irun.png"></a> </h3>
+          <ul class="slip-head">
+            <li class="col-game" >Matched: PTE 22,577</li>
+            <li class="col-home"><span>Back</span> <span>Lay</span></li>
+          </ul>
+          <div class="game-list">
+            <dl class="game-list-col">
+              <dt><a><img class="icon-predict" src="images/icon-chart.png"></a>Under 0.5 Goals<br>
+              </dt>
+              <dd class="col-home"> <a class="btn-back">1.59</a> </dd>
+            </dl>
+            <dl class="game-list-col">
+              <dt><a><img class="icon-predict" src="images/icon-chart.png"></a>Over 0.5 Goals<br>
+              </dt>
+              <dd class="col-home"> <a class="btn-back">2.7</a> <a class="btn-lay">2.8</a> </dd>
+            </dl>
+            <a  class="more">View Full Market </a> </div>
+        </div>
+      </div>
+      <div  class="event-right">
+        <div class="game-wrap">
+          <h3> <a class="add-pin"></a> <a class="to-expand" >Over/Under 2.5 Goals <img class="icon-irun" src="images/icon-irun.png"></a> </h3>
+          <ul class="slip-head">
+            <li class="col-game">Matched: PTE 4,009</li>
+            <li class="col-home"><span>Back</span> <span>Lay</span></li>
+          </ul>
+          <div  class="game-list">
+            <dl class="game-list-col">
+              <dt><a ><img class="icon-predict" src="images/icon-chart.png"></a>Under 2.5 Goals<br>
+              </dt>
+              <dd class="col-home"> <a class="btn-back" >1.36</a> <a class="btn-lay">1.38</a> </dd>
+            </dl>
+            <dl  class="game-list-col">
+              <dt><a><img class="icon-predict" src="images/icon-chart.png"></a>Over 2.5 Goals<br>
+              </dt>
+              <dd class="col-home"> <a class="btn-back">3.65</a> <a class="btn-lay">3.75</a> </dd>
+            </dl>
+            <a  class="more">View Full Market </a> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-right">
+    <div class="slip-wrap no-open-bet_slip">
+      <h3> <a class="to-expand" >Bet Slip </a> </h3>
+      <p >Click on the odds to add selections to the betslip. </p>
+    </div>
+  </div>
+</div>
+<!--body section--> 
+<script>
+$("#ul-menu-list li").click(function () {
+    $('.tab-s1').hide().eq($(this).index()).show();
+	  $('.hide-first-show-s-t').show().eq($(this).index()).hide();
+	
+	
+});
+</script> 
+<script>
+$(document).ready(function () {
+    $(".tab li a").click(function () {
+        $(".tab li a").removeClass("select");
+        $(this).addClass("select");
+    });
+});
+</script> 
+<script>
+$("#accountPopup").click(function(){
+  $("#account_pop").toggle();
+});
+</script> 
+<script>
+$(document).ready(function () {
+    $(".tab-markets li a").click(function () {
+        $(".tab-markets li a").removeClass("select");
+        $(this).addClass("select");
+    });
+});
+</script> 
+<script>
+    $(".game-wrap").on("click", function() { 
+	$(this).toggleClass("close");
+    $(this).parent().siblings().find("a").removeClass("close");
+});
+    </script>
+</body>
+</html>

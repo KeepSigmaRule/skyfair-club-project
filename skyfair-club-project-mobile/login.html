@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Skyfair</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javaScript" src="js/jquery-1.9.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body class="ui-mobile-viewport ui-overlay-a login-bg">
+<div class="login-bg">
+  <header class="login-head"> <a href="#" class="close ui-link" ></a>
+    <h1>SKYFAIR </h1>
+    <div class="betfair-wrap">
+      <p>Powered by</p>
+      <span> </span> </div>
+  </header>
+  <dl class="form-login">
+    <dd>
+      <input type="email" placeholder="Username">
+    </dd>
+    <dd >
+      <input type="password"  placeholder="Password">
+    </dd>
+    <dd>
+      <input type="text" placeholder="Validation Code" autocomplete="off">
+      <img id="authenticateImage" src="images/verifycode.gr" alt=""> </dd>
+    <dd>
+      <input name="valid" type="hidden">
+    </dd>
+    <dd> <a class="btn-send ui-link">Login </a> </dd>
+    <dd class="state"></dd>
+  </dl>
+  <ul class="policy-link" >
+    <li><a class="ui-link">KYC</a></li>
+    <li><a class="ui-link">About Us</a></li>
+    <li><a class="ui-link">Privacy Policy</a></li>
+    <li><a class="ui-link">Responsible Gaming</a></li>
+    <li><a class="ui-link">Terms and Conditions</a></li>
+    <li><a class="ui-link">Underage Gaming Policy</a></li>
+    <li><a class="ui-link">Self-Exclusion Policy</a></li>
+    <li><a class="ui-link">Rules and Regulations</a></li>
+  </ul>
+  
+  <!-- Support for skyexchange -->
+  
+  <div class="support-wrap extend-support">
+    <div class="extend-btn"> <img src="images/d1.svg" title="customer" class="support-customer"> <a target="_blank" class="ui-link">Customer support1</a> <a target="_blank" class="split-line ui-link">support2</a> </div>
+    <div class="extend-btn"> <img src="images/d2.svg" title="WhatsApp" class="support-whatsapp"> <a target="_blank" class="ui-link">WhatsApp 3</a> <a target="_blank" class="split-line ui-link">WhatsApp 4</a> </div>
+    <div class="extend-btn"> <img src="images/d3.svg" title="Telegram" class="support-telegram"> <a target="_blank" class="ui-link">+917900007566</a> <a target="_blank" class="split-line ui-link">+917900007644</a> </div>
+    <div class="support-social">
+      <div class="social-btn"> <img src="images/d4.svg" title="Skype" class="support-skype"> <a target="_blank" class="ui-link">Skype</a> </div>
+      <div class="social-btn"> <img src="images/d5.svg" title="Email" class="support-mail"> <a href="mailto:info@skyexchange.com" target="_blank" class="ui-link">Email</a> </div>
+      <div class="social-btn"> <img src="images/d6.svg" title="Instagram" class="support-ig"> <a target="_blank" class="ui-link">Instagram</a> </div>
+    </div>
+  </div>
+</div>
+<script>
+$(document).ready(function(){
+  $("#showOddsBtn").click(function(){
+    $("#expand-showOddsBtn").toggle();
+  });
+});
+
+$('.close').click(function(){
+    $('#expand-showOddsBtn').hide();
+});
+
+jQuery(document).ready(function() {
+    jQuery('#showOddsBtn').click(function(){
+        jQuery('.slider-left-to-right').removeClass('active')
+        jQuery('.slider-left-to-right').addClass('active');
+    });
+});
+
+</script> 
+<script>
+$(document).ready(function(){
+  $("#showOddsBtn2").click(function(){
+    $("#expand-showOddsBtn2").toggle();
+  });
+});
+
+$('.close').click(function(){
+    $('#expand-showOddsBtn2').hide();
+});
+
+jQuery(document).ready(function() {
+    jQuery('#showOddsBtn2').click(function(){
+        jQuery('.slider-left-to-right2').removeClass('active')
+        jQuery('.slider-left-to-right2').addClass('active');
+    });
+});
+
+</script>
+</body>
+</html>

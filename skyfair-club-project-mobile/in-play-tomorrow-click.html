@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Skyfair</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javaScript" src="js/jquery-1.9.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body class="ui-mobile-viewport ui-overlay-a">
+<div class="ui-page ui-page-theme-a ui-page-active">
+<!--header start-->
+<header>
+  <ul>
+    <li class="li-tv_bet"> <a class="a-open_bets ui-link" href="#"><img src="images/doller.png">Bets </a> </li>
+    <li class="main-wallet"> <a class="a-wallet ui-link">
+      <ul id="accountCredit">
+        <li><span>Main</span><span >PHK 0.00</span></li>
+        <li><span>Exposure</span><span >0.00</span></li>
+        <li class="nums">+<span>5</span></li>
+      </ul>
+      </a> <a class="a-refresh ui-link"><img src="images/refresh1.png"></a> </li>
+    <li><a class="a-setting ui-link" href="#" title="Setting"><img src="images/setting.png"></a></li>
+  </ul>
+</header>
+<!--header start-->
+<div class="marquee-box">
+  <h4>News</h4>
+  <marquee class="marquee">
+  <a><span>06 Mar 2023</span>Event :- Bangladesh v England ... Market :- 50 Over BAN ' 163 - 167 ' ( IST 11:15:25 - 11:17:03 ) ... Bets Voided Because Wrong Rate Offered Bymistake ... Sorry for the Inconvenience&nbsp;Caused</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a><span>21 Jan 2022</span>Match :- Minister Group Dhaka vs Khulna Tigers .. Market .. Bookmaker .. Selection :- Khulna Tigers ' 2 - 6 ' ( IST 21:18:35 - 21:18:38 ) Bets Voided Because Wrong Odds Offered Bymistake ... Sorry for the Inconveniences Caused</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a><span>04 Sep 2021</span>WHITE LABEL OF SKYEXCHANGE IS AVAILABLE NOW - CONTACT YOUR UPLINE.</a>
+  </marquee>
+</div>
+<div class="mian-wrap">
+  <div class="game-wrap">
+    <h4 class="game-info">Basketball</h4>
+    <table class="game-team">
+      <tbody>
+        <tr>
+          <th> <a class="pin-off" ></a>
+            <h4 >Chicago Bulls</h4>
+            <h4>Philadelphia 76ers</h4>
+            <ul class="scores-time">
+              <li>21 Mar, 04:40</li>
+            </ul>
+          </th>
+          <td class="team-refresh"><a class="refresh" href="#"></a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div  class="market-type ps ps--theme_default">
+    <ul>
+      <li class="select"><a>Moneyline</a></li>
+    </ul>
+  </div>
+  <div class="bets-wrap asiahadicap">
+    <dl class="bets-selections-head">
+      <dt> <a class="a-depth">Markets Depth</a>
+        <p> <span>Matched</span> <strong >PHK  23,947</strong> </p>
+      </dt>
+      <dd>Back </dd>
+      <dd>Lay </dd>
+    </dl>
+    <dl class="bets-selections" >
+      <dt>
+        <h4 >Chicago Bulls</h4>
+      </dt>
+      <dd id="btn1"> <a class="back-1">3.45<span> 197</span></a> </dd>
+      <dd id="btn2"> <a class="lay-1">3.7<span> 524</span></a> </dd>
+    </dl>
+    <div class="bet_slip-wrap back" id="form1" style="display:none;">
+      <ul class="btn-list">
+        <li>
+          <p class="dynamic-min-bet">&nbsp;</p>
+          <div  class="input-num"> <a  class="icon-minus" href="#"></a> <span  class="typed">3.5</span> <a class="icon-plus" href="#"></a> </div>
+        </li>
+        <li>
+          <p class="dynamic-min-bet">Min Bet: <strong>10</strong></p>
+          <div  class="input-num input-stake"> <a class="icon-minus" href="#"></a> <span class="typeing"></span> <a class="icon-plus" href="#"></a> </div>
+        </li>
+      </ul>
+      <ul class="coin-list">
+        <li><a > 20</a></li>
+        <li><a > 50</a></li>
+        <li><a> 100</a></li>
+        <li><a > 500</a></li>
+        <li><a > 3000</a></li>
+        <li><a> 5000</a></li>
+      </ul>
+      <div class="keyboard-wrap">
+        <ul class="btn-tel">
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li><a href="#">6</a></li>
+          <li><a href="#">7</a></li>
+          <li><a href="#">8</a></li>
+          <li><a href="#">9</a></li>
+          <li><a href="#">0</a></li>
+          <li><a href="#">00</a></li>
+          <li><a href="#">.</a></li>
+        </ul>
+        <a class="btn-delete" href="#"></a> </div>
+      <ul class="btn-list">
+        <li> <a href="#" class="btn">Cancel </a> </li>
+        <li> <a  href="#" class="btn-send disable">Place Bet </a> </li>
+      </ul>
+    </div>
+    <div class="bet_slip-wrap lay" id="form2" style="display:none;">
+      <ul class="btn-list">
+        <li>
+          <p class="dynamic-min-bet">&nbsp;</p>
+          <div class="input-num"> <a  class="icon-minus" href="#"></a> <span  class="typed">3.7</span> <a  class="icon-plus" href="#"></a> </div>
+        </li>
+        <li>
+          <p class="dynamic-min-bet">Min Bet: <strong >10</strong></p>
+          <div  class="input-num input-stake"> <a  class="icon-minus" href="#"></a> <span class="typeing"></span> <a  class="icon-plus" href="#"></a> </div>
+        </li>
+      </ul>
+      <ul class="coin-list">
+        <li><a> 20</a></li>
+        <li><a > 50</a></li>
+        <li><a > 100</a></li>
+        <li><a> 500</a></li>
+        <li><a> 3000</a></li>
+        <li><a> 5000</a></li>
+      </ul>
+      <div class="keyboard-wrap">
+        <ul class="btn-tel">
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li><a href="#">6</a></li>
+          <li><a href="#">7</a></li>
+          <li><a href="#">8</a></li>
+          <li><a href="#">9</a></li>
+          <li><a href="#">0</a></li>
+          <li><a href="#">00</a></li>
+          <li><a href="#">.</a></li>
+        </ul>
+        <a class="btn-delete" href="#"></a> </div>
+      <ul class="btn-list">
+        <li> <a  href="#" class="btn">Cancel </a> </li>
+        <li> <a  href="#" class="btn-send disable">Place Bet </a> </li>
+      </ul>
+    </div>
+  </div>
+  
+  <!--footer menu fixed start-->
+  <nav>
+    <ul class="mini-lobby">
+      <li class="main-nav"> <a class="ui-link"> <img class="icon-promote" src="images/promot.gif" alt="mini"> </a> </li>
+      <li><a href="sport.html" class="ui-link"><img class="icon-sports" src="images/s1.png">Sports </a></li>
+      <li><a href="in-play.html" class="ui-link"><img class="icon-inplay" src="images/s2.png">In-Play </a></li>
+      <li><a href="home.html" class="ui-link"><img class="icon-home" src="images/s3.png">Home </a></li>
+      <li ><a href="multi-market.html" class="ui-link"><img class="icon-pin" src="images/s4.png">Multi Markets </a></li>
+      <li><a href="profile.html" class="ui-link"><img class="icon-account" src="images/s5.png">Account </a></li>
+    </ul>
+  </nav>
+  
+  <!--footer menu fixed end--> 
+  
+</div>
+ <script>
+    $(document).ready(function() {
+  $("#btn1").click(function() {
+    $("#form1").toggle();
+    $("#form2").hide();
+  });
+  $("#btn2").click(function() {
+    $("#form2").toggle();
+    $("#form1").hide();
+  });
+   $("#btn3").click(function() {
+    $("#form3").toggle();
+  });
+});
+    </script>
+</body>
+</html>

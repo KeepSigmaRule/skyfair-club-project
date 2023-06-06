@@ -1,0 +1,582 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Skyfair</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javaScript" src="js/jquery-1.9.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body class="ui-mobile-viewport ui-overlay-a">
+<div class="ui-page ui-page-theme-a ui-page-active"> 
+  <!--header start-->
+  <header>
+    <ul>
+      <li class="li-tv_bet"> <a class="a-open_bets ui-link" href="#" id="showOddsBtn"><img src="images/doller.png">Bets </a> </li>
+      <li class="main-wallet"> <a class="a-wallet ui-link">
+        <ul id="accountCredit">
+          <li><span>Main</span><span >PHK 0.00</span></li>
+          <li><span>Exposure</span><span >0.00</span></li>
+          <li class="nums">+<span>5</span></li>
+        </ul>
+        </a> <a class="a-refresh ui-link"><img src="images/refresh1.png"></a> </li>
+      <li><a class="a-setting ui-link" href="#" title="Setting"  id="showOddsBtn2"><img src="images/setting.png"></a></li>
+    </ul>
+  </header>
+  
+  <!--header start-->
+  <div class="marquee-box">
+    <h4>News</h4>
+    <marquee class="marquee">
+    <span type="button" data-bs-toggle="modal"  data-bs-target="#exampleModal5"><a ><span>06 Mar 2023</span>Event :- Bangladesh v England ... Market :- 50 Over BAN ' 163 - 167 ' ( IST 11:15:25 - 11:17:03 ) ... Bets Voided Because Wrong Rate Offered Bymistake ... Sorry for the Inconvenience&nbsp;Caused</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a><span>21 Jan 2022</span>Match :- Minister Group Dhaka vs Khulna Tigers .. Market .. Bookmaker .. Selection :- Khulna Tigers ' 2 - 6 ' ( IST 21:18:35 - 21:18:38 ) Bets Voided Because Wrong Odds Offered Bymistake ... Sorry for the Inconveniences Caused</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a><span>04 Sep 2021</span>WHITE LABEL OF SKYEXCHANGE IS AVAILABLE NOW - CONTACT YOUR UPLINE.</a></span>
+    </marquee>
+  </div>
+  
+  <!--banner start-->
+  <div class="promo-banner-wrap active">
+    <div class="promo-banner">
+      <div class="promo-viewport"> <a><img src="images/kv-betgames-9livegames-m.png"></a> </div>
+    </div>
+  </div>
+  <!--banner end--> 
+  
+  <!--footer menu fixed start-->
+  <nav>
+    <ul class="mini-lobby">
+      <li class="main-nav"> <span type="button" data-bs-toggle="modal"  data-bs-target="#exampleModal4"><a class="ui-link"> <img class="icon-promote" src="images/promot.gif" alt="mini"> </a></span> </li>
+      <li><a href="sport.html" class="ui-link"><img class="icon-sports" src="images/s1.png">Sports </a></li>
+      <li><a href="in-play.html" class="ui-link"><img class="icon-inplay" src="images/s2.png">In-Play </a></li>
+      <li><a href="home.html" class="ui-link"><img class="icon-home" src="images/s3.png">Home </a></li>
+      <li ><a href="multi-market.html" class="ui-link"><img class="icon-pin" src="images/s4.png">Multi Markets </a></li>
+      <li><a href="profile.html" class="ui-link"><img class="icon-account" src="images/s5.png">Account </a></li>
+    </ul>
+  </nav>
+  
+  <!--footer menu fixed end-->
+  
+  <div  role="page">
+    <div class="mian-wrap">
+      <div class="gamehall"> <a>
+        <dl class="entrance-title">
+          <dt>Sports</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <dl  class="on_live">
+          <dt>
+            <p class="live_icon"><span></span> LIVE</p>
+          </dt>
+          <dd >
+            <p>Cricket </p>
+            <span >1</span></dd>
+          <dd>
+            <p>Soccer </p>
+            <span>25</span></dd>
+          <dd>
+            <p>E-Soccer </p>
+            <span>1</span></dd>
+          <dd >
+            <p>Tennis </p>
+            <span >1</span></dd>
+          <dd >
+            <p>Basketball </p>
+            <span>0</span></dd>
+        </dl>
+        <img src="images/banner_sports.png" alt="" draggable="false"> </a> 
+        
+        <!-- SABA sports --> 
+        
+        <a class="entrance">
+        <dl class="entrance-title">
+          <dt>Virtual Cricket</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_virtualsports.png" alt="" draggable="false"> </a> <a class="entrance">
+        <dl class="entrance-title">
+          <dt>Royal Gaming</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_royalgaming.png" alt="" draggable="false"> </a> <a class="entrance-half">
+        <dl class="entrance-title">
+          <dt>AE India</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_AEIndia-half.png" alt="" draggable="false"> </a> <a class="entrance-half" >
+        <dl class="entrance-title">
+          <dt>Live Casino</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_casino-half.png" alt="" draggable="false"> </a> <a class="entrance-half">
+        <dl class="entrance-title">
+          <dt>Blackjack</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_blackjack-half.png" alt="" draggable="false"> </a> <a class="entrance-half">
+        <dl class="entrance-title">
+          <dt>7 Up Down</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_7up7down-half.png" alt="" draggable="false"> </a> <a class="entrance-half">
+        <dl class="entrance-title">
+          <dt>Andar Bahar VR</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_andarBaharVR-half.png" alt="" draggable="false"> </a> <a class="entrance-half" >
+        <dl class="entrance-title">
+          <dt>Supernowa</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_supernowa-half.png" alt="" draggable="false"> </a> <a class="entrance-half">
+        <dl class="entrance-title">
+          <dt>7mojos</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_7mojos-half.png" alt="" draggable="false"> </a> <a class="entrance-half">
+        <dl class="entrance-title">
+          <dt>HORSEBOOK</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_horsebook-half.png" alt="" draggable="false"> </a> <a class="entrance-half">
+        <dl class="entrance-title">
+          <dt>Minesweeper</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_minesweeper-half.png" alt="" draggable="false"> </a> <a class="entrance-half">
+        <dl class="entrance-title">
+          <dt>Sky Trader</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_skytrader-half.png" alt="" draggable="false"> </a> <a class="entrance-half">
+        <dl class="entrance-title">
+          <dt>Teen Patti</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_teenPatti-half.png" alt="" draggable="false"> </a> <a class="entrance-half" >
+        <dl class="entrance-title">
+          <dt>Super Over VR</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_superOverVR-half.png" alt="" draggable="false"> </a> <a class="entrance-half">
+        <dl class="entrance-title">
+          <dt>TeenPatti 20-20</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_TeenPatti2020-half.png" alt="" draggable="false"> </a> 
+        
+        <!-- JILI NUMBERKING  --> 
+        
+        <a class="entrance-half">
+        <dl class="entrance-title">
+          <dt>NumberKing</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_NumberKing-half.png" alt="" draggable="false"> </a> 
+        
+        <!-- JILI Big small  --> 
+        
+        <a class="entrance-half" >
+        <dl class="entrance-title">
+          <dt>Big small</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_BigSmall-half.png" alt="" draggable="false"> </a> 
+        
+        <!-- JILI TeenPatti Joker  --> 
+        
+        <a class="entrance-half">
+        <dl class="entrance-title">
+          <dt>TeenPatti Joker</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_TeenPattiJoker-half.png" alt="" draggable="false"> </a> 
+        
+        <!-- JILI 7up7down  --> 
+        
+        <a class="entrance-half">
+        <dl class="entrance-title">
+          <dt>7up7down</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_7up7down-half (1).png" alt="" draggable="false"> </a> 
+        
+        <!-- JILI Dragon & Tiger  --> 
+        
+        <a class="entrance-half">
+        <dl class="entrance-title">
+          <dt>Dragon &amp; Tiger</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_DragonNTiger-half.png" alt="" draggable="false"> </a> <a class="entrance-half">
+        <dl class="entrance-title">
+          <dt>Auto Roulette</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_autoRoulette-half.png" alt="" draggable="false"> </a> <a class="entrance-half">
+        <dl class="entrance-title">
+          <dt>Dus Ka Dum (Cards) VR</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_DusKaDumVR-half.png" alt="" draggable="false"> </a> 
+        
+        <!-- JILI Callbreak Quick  --> 
+        
+        <a class="entrance-half" >
+        <dl class="entrance-title">
+          <dt>Callbreak Quick</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_CallbreakQuick-half.png" alt="" draggable="false"> </a> 
+        
+        <!-- JILI Sic Bo  --> 
+        
+        <a class="entrance-half">
+        <dl class="entrance-title">
+          <dt>Sic Bo</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_SicBo-Jili-half.png" alt="" draggable="false"> </a> 
+        
+        <!-- JILI Baccarat  --> 
+        
+        <a class="entrance-half">
+        <dl class="entrance-title">
+          <dt>Baccarat</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_Baccarat-half.png" alt="" draggable="false"> </a> <a class="entrance-half">
+        <dl class="entrance-title">
+          <dt>Bonus Dice</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_BonusDice-half.png" alt="" draggable="false"> </a> <a class="entrance-half" >
+        <dl class="entrance-title">
+          <dt>Heist</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_Heist-half.png" alt="" draggable="false"> </a> <a class="entrance-half" >
+        <dl class="entrance-title">
+          <dt>5 Card Poker</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_5CardPoker-half.png" alt="" draggable="false"> </a> <a class="entrance-half">
+        <dl class="entrance-title">
+          <dt>Color Game</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_ColorGame-half.png" alt="" draggable="false"> </a> <a class="entrance-half">
+        <dl class="entrance-title">
+          <dt>32 Cards</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_32card-half.png" alt="" draggable="false"> </a> 
+        
+        <!-- JILI Rummy --> 
+        
+        <a class="entrance-half">
+        <dl class="entrance-title">
+          <dt>Rummy</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_rummy-half.png" alt="" draggable="false"> </a> <a class="entrance-half" >
+        <dl class="entrance-title">
+          <dt>Dragon Tiger</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_dragonTiger-half.png" alt="" draggable="false"> </a> <a class="entrance-half">
+        <dl class="entrance-title">
+          <dt>Worli Matka VR</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_worliMatkaVR-half.png" alt="" draggable="false"> </a> 
+        
+        <!-- BetGames --> 
+        
+        <a class="entrance-half">
+        <dl class="entrance-title">
+          <dt>BetGames</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_betgames-half.png" alt="" draggable="false"> </a> 
+        
+        <!-- KM Andar Bahar --> 
+        
+        <a class="entrance-half">
+        <dl class="entrance-title">
+          <dt>Andar Bahar</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_andarBahar-half.png" alt="" draggable="false"> </a> 
+        
+        <!-- KM_Sicbo --> 
+        
+        <a class="entrance-half">
+        <dl class="entrance-title">
+          <dt>Sicbo</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_sicbo-half.png" alt="" draggable="false"> </a> 
+        
+        <!-- KM_7up7down --> 
+        
+        <a class="entrance-half">
+        <dl class="entrance-title">
+          <dt>7 UP 7 Down</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_sevenUpDown-half.png" alt="" draggable="false"> </a> <a class="entrance-half">
+        <dl class="entrance-title">
+          <dt>Coin Toss</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_CoinToss-half.png" alt="" draggable="false"> </a> 
+        
+        <!-- Teen Patti --> 
+        
+        <a class="entrance-half">
+        <dl class="entrance-title">
+          <dt>Teen Patti</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_teenPatti-half (1).png" alt="" draggable="false"> </a> <a class="entrance-half">
+        <dl class="entrance-title">
+          <dt>Card Matka</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_cardMatka-half.png" alt="" draggable="false"> </a> <a class="entrance-half">
+        <dl class="entrance-title">
+          <dt>Number Matka</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_numberMatka-half.png" alt="" draggable="false"> </a> 
+        
+        <!-- LUDO --> 
+        
+        <a class="entrance-half" >
+        <dl class="entrance-title">
+          <dt>Binary</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_bpoker-half.png" alt="" draggable="false"> </a> <a class="entrance-half">
+        <dl class="entrance-title">
+          <dt>Bpoker</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_binary-half.png" alt="" draggable="false"> </a> </div>
+      
+      <!-- Support for skyexchange -->
+      
+      <div class="support-wrap extend-support">
+        <div class="extend-btn"> <img src="images/login-a1.png" title="customer" class="support-customer"> <a target="_blank">Customer support1</a> <a target="_blank" class="split-line">support2</a> </div>
+        <div class="extend-btn"> <img src="images/login-a2.png" title="WhatsApp" class="support-whatsapp"> <a target="_blank">+917700002932</a> <a target="_blank" class="split-line">+917777003263</a> </div>
+        <div class="extend-btn"> <img src="images/a3.png" title="Telegram" class="support-telegram"> <a target="_blank">+917777002932</a> <a href="http://www.t.me/+917900007644" target="_blank" class="split-line">+917900007644</a> </div>
+        <div class="support-social">
+          <div class="social-btn"> <img src="images/login-a3.png" title="Skype" class="support-skype"> <a target="_blank">Skype</a> </div>
+          <div class="social-btn"> <img src="images/login-a4.png" title="Email" class="support-mail"> <a target="_blank">Email</a> </div>
+          <div class="social-btn"> <img src="images/login-a5.png" title="Instagram" class="support-ig"> <a target="_blank" class="ui-link">Instagram</a> </div>
+        </div>
+      </div>
+      <ul class="policy-link">
+        <li><a >KYC</a></li>
+        <li><a >About Us</a></li>
+        <li><a>Privacy Policy</a></li>
+        <li><a >Responsible Gaming</a></li>
+        <li><a>Terms and Conditions</a></li>
+        <li><a >Underage Gaming Policy</a></li>
+        <li><a>Self-Exclusion Policy</a></li>
+        <li><a>Rules and Regulations</a></li>
+      </ul>
+      <div class="extra-wrap">
+        <div class="power-wrap-b"> <span>Powered by</span><img src="images/logo-betfair.png"> </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div  class="overlay left-side slider-left-to-right" id="expand-showOddsBtn" style="display:none;">
+  <div class="side-wrap">
+    <div class="side-head">
+      <h3 class="a-open_bets"><img src="https://statics3.skyfair.club/images/mobile/transparent.gif">Open Bets </h3>
+      <a class="close" href="#"></a> </div>
+    <div class="side-content">
+      <div  class="path-wrap"> <a class="go_back" href="#"></a>
+        <ul>
+          <li >Bangladesh vs Ireland - Match Odds</li>
+        </ul>
+      </div>
+      <h3> Matched </h3>
+      <div class="slip-list" >
+        <dl class="bets-head">
+          <dt>
+            <h4>Lay </h4>
+          </dt>
+          <dd class="col-odds"><span>Odds</span></dd>
+          <dd class="col-stake"><span>Stake</span></dd>
+          <dd class="col-profit"><span>Liability</span></dd>
+        </dl>
+        <dl class="bets-lay">
+          <dt> <span  class="lay">Lay</span>
+            <h4 >Bangladesh</h4>
+          </dt>
+          <dd class="col-odds"><span>1.21</span></dd>
+          <dd class="col-stake" title=" 20"><span> 20.00</span></dd>
+          <dd  class="col-profit"><span> 4.20</span></dd>
+          <dd class="col-ref" >
+            <ul>
+              <li >Ref:1852178533</li>
+              <li >20-03-2023 10:54</li>
+            </ul>
+          </dd>
+        </dl>
+      </div>
+      <ul class="check-list">
+        <li> <a class="checked" href="#">Bet Info</a> </li>
+        <li> <a href="#">Time Order</a> </li>
+        <li> <a href="#">Average Odds</a> </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="overlay right-side slider-left-to-right2" id="expand-showOddsBtn2" style="display:none;" >
+  <div class="side-wrap setting-wrap">
+    <div class="side-head">
+      <h3 class="a-setting"><img src="https://statics3.skyfair.club/images/mobile/transparent.gif">Setting </h3>
+      <a class="close ui-link"></a> </div>
+    <div class="side-content">
+      <h3>Stake </h3>
+      <dl class="setting-block">
+        <dt>Default stake
+          <input type="number">
+        </dt>
+      </dl>
+      <dl class="setting-block stake-setting">
+        <dt>Quick Stakes </dt>
+        <dd><a  class="btn ui-link select" >20</a></dd>
+        <dd><a  class="btn ui-link select" >50</a></dd>
+        <dd><a  class="btn ui-link select" >100</a></dd>
+        <dd><a  class="btn ui-link" >300</a></dd>
+        <dd><a  class="btn ui-link select" >500</a></dd>
+        <dd><a class="btn ui-link" >1000</a></dd>
+        <dd><a class="btn ui-link select">3000</a></dd>
+        <dd><a  class="btn ui-link select">5000</a></dd>
+        <dd class="col-stake_edit"><a class="btn-edit ui-link">Edit Stakes </a></dd>
+      </dl>
+      <h3>Odds </h3>
+      <dl class="setting-block">
+        <dt>Highlight when odds change </dt>
+        <dd><a class="switch_on">
+          <input type="hidden" value="1">
+          <span></span></a></dd>
+      </dl>
+      <ul class="btn-list">
+        <li> <a href="#" class="btn ui-link">Cancel </a> </li>
+        <li> <a href="#" class="btn-send ui-link">Save </a> </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="modal fade form-modal-bg form-modal-bg-setting refre-modal pop-wray-des" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body form-modal-bg-body">
+        <div class="pop-wrap">
+          <h3>Please Confirm Your Bet </h3>
+          <dl class="info-bet">
+            <dt> <span class="lay">Lay</span>
+              <h4>India</h4>
+            </dt>
+            <dd> <span>Odds</span> <strong>1.18</strong> </dd>
+            <dd> <span>Stake</span> <strong> 18</strong> </dd>
+            <dd> <span id="plName">Liability</span> <strong id="pl" class="red"> 3.24</strong> </dd>
+          </dl>
+          <ul class="btn-list">
+            <li> <a href="#" class="btn">Back </a> </li>
+            <li> <a href="#" class="btn-send">Confirm </a> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade form-modal-bg form-modal-bg-setting refre-modal announ" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body form-modal-bg-body">
+        <div class="">
+          <div class="news-wrap marquee-pop">
+            <div class="side-head">
+              <h3 class="a-depth">Announcement</h3>
+              <a class="close ui-link" data-bs-dismiss="modal" aria-label="Close">Close</a></div>
+            <div class="announce-wrap" >
+              <div class="article-wrap">
+                <dl class="article-date">
+                  <dt >23</dt>
+                  <dd>Mar</dd>
+                  <dd>2023</dd>
+                </dl>
+                <p>Event :- Zimbabwe v Netherlands.. Market :- 23 Over ZIM.. Whole Market Voided Because Wrong Rate Offered By Mistake  .. We have Created New Market by adding (N) after the Market Name....  Sorry for the Inconvenience&nbsp;Caused</p>
+              </div>
+              <div class="article-wrap">
+                <dl class="article-date">
+                  <dt>23</dt>
+                  <dd >Mar</dd>
+                  <dd>2023</dd>
+                </dl>
+                <p>Event : Zimbabwe v Netherlands .. Market :-  " 1.2 Ball Run ZIM " Whole Market Voided Because Wrong Rate Offered By Mistake .. Sorry for the Inconvenience Caused</p>
+              </div>
+            </div>
+            <div>
+              <ul class="pages">
+                <li ><a class="ui-link disable" >Prev </a></li>
+                <li><a  class="ui-link select">1</a></li>
+                <li ><a class="ui-link disable" >Next </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+$(document).ready(function(){
+  $("#showOddsBtn").click(function(){
+    $("#expand-showOddsBtn").toggle();
+  });
+});
+
+$('.close').click(function(){
+    $('#expand-showOddsBtn').hide();
+});
+
+jQuery(document).ready(function() {
+    jQuery('#showOddsBtn').click(function(){
+        jQuery('.slider-left-to-right').removeClass('active')
+        jQuery('.slider-left-to-right').addClass('active');
+    });
+});
+
+</script> 
+<script>
+$(document).ready(function(){
+  $("#showOddsBtn2").click(function(){
+    $("#expand-showOddsBtn2").toggle();
+  });
+});
+
+$('.close').click(function(){
+    $('#expand-showOddsBtn2').hide();
+});
+
+jQuery(document).ready(function() {
+    jQuery('#showOddsBtn2').click(function(){
+        jQuery('.slider-left-to-right2').removeClass('active')
+        jQuery('.slider-left-to-right2').addClass('active');
+    });
+});
+
+</script>
+</body>
+</html>

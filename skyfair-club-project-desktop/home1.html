@@ -1,0 +1,496 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Skyfair</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javaScript" src="js/jquery-1.9.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+<!-- Menu Wrap start-->
+<div class="top">
+  <div class="header full-wrap">
+    <h1><a href="/">SKYFAIR </a></h1>
+    <div class="search-wrap">
+      <div>
+        <input class="search-input" type="text" placeholder="Search Events">
+      </div>
+    </div>
+    <ul class="account-wrap">
+      <li class="main-wallet"> <a href="#multiBalancePop" class="a-wallet">
+        <ul>
+          <li><span>Main Balance</span> <span >PHK 0.00</span></li>
+          <li><span>Exposure</span> <span >0.00</span></li>
+          <li class="nums">+<span >5</span></li>
+        </ul>
+        <div class="wallet-detail" >
+          <div class="wallet-detail-group">
+            <dl class="wallet-detail-content">
+              <dt>Main Balance</dt>
+              <dd class="wallet-balance-num"><span class="badge-currency">USD</span><span >0.00</span></dd>
+              <dd class="wallet-exposure">Exposure <span >0.00</span></dd>
+            </dl>
+          </div>
+          <div class="wallet-detail-group"> </div>
+          <div class="btn-box">
+            <button class="btn">Close</button>
+          </div>
+        </div>
+        </a> <a class="a-refresh" href="#" title="Refresh Main Wallet"><img src="images/refresh1.png"></a> </li>
+      <li class="account" ><a id="accountPopup">My Account </a>
+        <ul id="account_pop" style="display: none;">
+          <li>
+            <h4> demo01 <span class="gmt" title="Time Zone">GMT+5:30</span> </h4>
+          </li>
+          <li><a href="profile.html"  target="_blank">My Profile </a></li>
+          <li><a href="balance-overview.html" target="_blank">Balance Overview </a></li>
+          <li><a href="account-statement.html" target="_blank">Account Statement </a></li>
+          <li><a href="my-bets.html" target="_blank">My Bets </a></li>
+          <li><a href="bet-history.html"  target="_blank">Bets History </a></li>
+          <li><a href="profit-loss.html" target="_blank">Profit &amp; Loss </a></li>
+          <li class="logout"><a>LOGOUT<img src="https://statics3.skyfair.club/images/transparent.gif"></a> </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  
+  <!-- Menu Wrap -->
+  <div class="menu-wrap">
+    <div class="full-wrap">
+      <ul  class="menu">
+       <li><a  href="home1.html">Home </a></li>
+        <li><a href="in-play.html" class="select">In-Play </a></li>
+        <li><a href="multi-market.html">Multi Markets </a></li>
+        <li> <a href="cricket.html"> <span class="tag-live" ><strong></strong>1</span> Cricket </a> </li>
+        <li> <a href="soccer.html"> <span  class="tag-live" ><strong></strong>1</span> Soccer </a> </li>
+        <li> <a href="tennis.html"> <span  class="tag-live" ><strong></strong>7</span> Tennis </a> </li>
+        <li> <a> Virtual Cricket </a> </li>
+        <li> <a > <span class="tag-live"><strong></strong>5</span> E-Soccer </a> </li>
+        <li> <a href="basketball.html"> <span class="tag-live" ><strong></strong>0</span> Basketball </a> </li>
+        <li><a>Binary </a></li>
+        <li> <a> Sky Trader </a> </li>
+        <li><a href="horse-racing.html">Horse Racing </a></li>
+        <li class="dark_menu-li"><a class="casino tag-new">Casino </a> </li>
+        <li><a>Result </a></li>
+      </ul>
+      <ul class="setting-wrap">
+        <li id="one-id"><a class="one_click" >One Click Bet </a></li>
+        <li><a class="setting" >Setting <img src="https://statics3.skyfair.club/images/transparent.gif"></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- Menu Wrap end --> 
+
+<!--body section-->
+<div class="full-wrap">
+  <div id="centerColumn" class="col-center gamehall">
+    <div class="marquee-box">
+      <h4>News</h4>
+      <marquee class="marquee">
+      <a href="announcement.html"><span>06 Mar 2023</span>Event :- Bangladesh v England ... Market :- 50 Over BAN ' 163 - 167 ' ( IST 11:15:25 - 11:17:03 ) ... Bets Voided Because Wrong Rate Offered Bymistake ... Sorry for the Inconvenience&nbsp;Caused</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a><span>21 Jan 2022</span>Match :- Minister Group Dhaka vs Khulna Tigers .. Market .. Bookmaker .. Selection :- Khulna Tigers ' 2 - 6 ' ( IST 21:18:35 - 21:18:38 ) Bets Voided Because Wrong Odds Offered Bymistake ... Sorry for the Inconveniences Caused</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a><span>04 Sep 2021</span>WHITE LABEL OF SKYEXCHANGE IS AVAILABLE NOW - CONTACT YOUR UPLINE.</a>
+      </marquee>
+    </div>
+    <div class="over-wrap">
+      <div class="promo-banner-wrap active">
+        <div class="promo-banner">
+          <ul class="slides">
+            <li class="banner"><a><img src="images/kv-skyexchang-skyfair-m.jpg" alt=""></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="gamehall-wrap-simple"> <a>
+        <dl  class="on_live">
+          <dt>
+            <p class="live_icon"><span></span> LIVE</p>
+          </dt>
+          <dd >
+            <p>Cricket </p>
+            <span >2</span></dd>
+          <dd>
+            <p>Soccer </p>
+            <span >21</span></dd>
+          <dd>
+            <p>Tennis </p>
+            <span>11</span></dd>
+          <dd >
+            <p>E-Soccer </p>
+            <span>5</span></dd>
+          <dd>
+            <p>Basketball </p>
+            <span >2</span></dd>
+        </dl>
+        <dl class="entrance-title">
+          <dt>Sports</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_sports.png" alt="" > </a> 
+        
+        <!-- SABA sports --> 
+        
+        <a >
+        <dl class="entrance-title">
+          <dt>Virtual Cricket</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_virtualsports.png" alt="" > </a> <a class="">
+        <dl class="entrance-title">
+          <dt>Royal Gaming</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_royalgaming.png" alt="" > </a> <a class="entrance-half">
+        <dl class="entrance-title">
+          <dt>Live Casino</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_casino-half.png" alt="" > </a> <a class="entrance-half">
+        <dl class="entrance-title">
+          <dt>Blackjack</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_blackjack-half.png" alt="" > </a> <a class="entrance-half">
+        <dl class="entrance-title">
+          <dt>7 Up Down</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_7up7down-half.png" alt="" > </a> <a class="entrance-half" >
+        <dl class="entrance-title">
+          <dt>Andar Bahar VR</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_andarBaharVR-half.png" alt="" > </a> <a class="entrance-half">
+        <dl class="entrance-title">
+          <dt>Supernowa</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_supernowa-half.png" alt="" > </a> <a class="entrance-half" >
+        <dl class="entrance-title">
+          <dt>7mojos</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_7mojos-half.png" alt="" > </a> <a class="entrance-half" >
+        <dl class="entrance-title">
+          <dt>HORSEBOOK</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_horsebook-half.png" alt="" > </a> <a class="entrance-half" >
+        <dl class="entrance-title">
+          <dt>Minesweeper</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_minesweeper-half.png" alt="" > </a> <a class="entrance-half" hr>
+        <dl class="entrance-title">
+          <dt>Sky Trader</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_skytrader-half.png" alt="" > </a> <a class="entrance-half" >
+        <dl class="entrance-title">
+          <dt>Teen Patti</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_teenPatti-half.png" alt="" > </a> <a class="entrance-half" >
+        <dl class="entrance-title">
+          <dt>Super Over VR</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_superOverVR-half.png" alt="" > </a> <a class="entrance-half">
+        <dl class="entrance-title">
+          <dt>TeenPatti 20-20</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_TeenPatti2020-half.png" alt="" > </a> 
+        
+        <!-- JILI NUMBERKING  --> 
+        
+        <a class="entrance-half" >
+        <dl class="entrance-title">
+          <dt>NumberKing</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_NumberKing-half.png" alt="" > </a> 
+        
+        <!-- JILI Big small  --> 
+        
+        <a class="entrance-half">
+        <dl class="entrance-title">
+          <dt>Big small</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_BigSmall-half.png" alt="" > </a> 
+        
+        <!-- JILI TeenPatti Joker  --> 
+        
+        <a class="entrance-half" >
+        <dl class="entrance-title">
+          <dt>TeenPatti Joker</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_TeenPattiJoker-half.png" alt="" > </a> 
+        
+        <!-- JILI 7up7down  --> 
+        
+        <a class="entrance-half" >
+        <dl class="entrance-title">
+          <dt>7up7down</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_7up7down-half.png" alt="" > </a> 
+        
+        <!-- JILI Dragon & Tiger  --> 
+        
+        <a class="entrance-half">
+        <dl class="entrance-title">
+          <dt>Dragon &amp; Tiger</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_DragonNTiger-half.png" alt="" > </a> <a class="entrance-half" >
+        <dl class="entrance-title">
+          <dt>Auto Roulette</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_autoRoulette-half.png" alt="" > </a> <a class="entrance-half" >
+        <dl class="entrance-title">
+          <dt>Dus Ka Dum (Cards) VR</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_DusKaDumVR-half.png" alt="" > </a> 
+        
+        <!-- JILI Callbreak Quick  --> 
+        
+        <a class="entrance-half" >
+        <dl class="entrance-title">
+          <dt>Callbreak Quick</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_CallbreakQuick-half.png" alt="" > </a> 
+        
+        <!-- JILI Sic Bo  --> 
+        
+        <a class="entrance-half">
+        <dl class="entrance-title">
+          <dt>Sic Bo</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_SicBo-Jili-half.png" alt="" > </a> 
+        
+        <!-- JILI Baccarat  --> 
+        
+        <a class="entrance-half" >
+        <dl class="entrance-title">
+          <dt>Baccarat</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_Baccarat-half.png" alt="" > </a> <a class="entrance-half">
+        <dl class="entrance-title">
+          <dt>Bonus Dice</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_BonusDice-half.png" alt="" > </a> <a class="entrance-half" >
+        <dl class="entrance-title">
+          <dt>Heist</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_Heist-half.png" alt="" > </a> <a class="entrance-half" >
+        <dl class="entrance-title">
+          <dt>5 Card Poker</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_5CardPoker-half.png" alt="" > </a> <a class="entrance-half" >
+        <dl class="entrance-title">
+          <dt>Color Game</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_ColorGame-half.png" alt="" > </a> <a class="entrance-half">
+        <dl class="entrance-title">
+          <dt>32 Cards</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_32card-half.png" alt="" > </a> 
+        
+        <!-- JILI Rummy --> 
+        
+        <a class="entrance-half">
+        <dl class="entrance-title">
+          <dt>Rummy</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_rummy-half.png" alt="" > </a> <a class="entrance-half" >
+        <dl class="entrance-title">
+          <dt>Dragon Tiger</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_dragonTiger-half.png" alt="" > </a> <a class="entrance-half" >
+        <dl class="entrance-title">
+          <dt>Worli Matka VR</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_worliMatkaVR-half.png" alt="" > </a> 
+        
+        <!-- BetGames --> 
+        
+        <a class="entrance-half">
+        <dl class="entrance-title">
+          <dt>BetGames</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_betgames-half.png" alt="" > </a> 
+        
+        <!-- KM Andar Bahar --> 
+        
+        <a class="entrance-half" >
+        <dl class="entrance-title">
+          <dt>Andar Bahar</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_andarBahar-half.png" alt="" > </a> <a class="entrance-half" >
+        <dl class="entrance-title">
+          <dt>Sicbo</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_sicbo-half.png" alt="" > </a> <a class="entrance-half">
+        <dl class="entrance-title">
+          <dt>7 UP 7 Down</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_sevenUpDown-half.png" alt="" > </a> <a class="entrance-half" >
+        <dl class="entrance-title">
+          <dt>Coin Toss</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_CoinToss-half.png" alt="" > </a> 
+        
+        <!-- Teen Patti --> 
+        
+        <a class="entrance-half">
+        <dl class="entrance-title">
+          <dt>Teen Patti</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_teenPatti-half.png" alt="" > </a> <a class="entrance-half">
+        <dl class="entrance-title">
+          <dt>Card Matka</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_cardMatka-half.png" alt="" > </a> <a class="entrance-half">
+        <dl class="entrance-title">
+          <dt>Number Matka</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_numberMatka-half.png" alt="" > </a> <a class="entrance-half" >
+        <dl class="entrance-title">
+          <dt>Binary</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_binary-half.png" alt="" > </a> <a class="entrance-half" >
+        <dl class="entrance-title">
+          <dt>Bpoker</dt>
+          <dd>Play Now</dd>
+        </dl>
+        <img src="images/banner_bpoker-half.png" alt="" > </a> </div>
+      <div class="footer"> 
+        
+        <!-- Support for skyexchange -->
+        
+        <div class="support-wrap extend-support">
+          <div class="extend-wrap">
+            <div class="extend-btn"> <img src="images/login-a1.png" title="customer" class="support-customer"> <a  target="_blank">Customer support1</a> <a  target="_blank" class="split-line">support2</a> </div>
+            <div class="extend-btn"> <img src="images/login-a2.png" title="WhatsApp" class="support-whatsapp"> <a  target="_blank">+917777002759</a> <a  target="_blank" class="split-line">+917777003263</a> </div>
+          </div>
+          <div class="extend-btn"> <img src="images/a3.png" title="Telegram" class="support-telegram"> <a target="_blank">+917777002932</a> <a target="_blank" class="split-line">+917900007644</a> </div>
+          <div class="extend-wrap">
+            <div class="support-social"> <img src="images/login-a3.png" title="Skype" class="support-skype"> <a target="_blank">skyexchangeofficial</a> </div>
+            <div class="support-social"> <img src="images/login-a4.png" title="Email" class="support-mail"> <a  target="_blank">info@skyexchange.com</a> </div>
+            <div class="support-social"> <img src="images/login-a5.png" title="Instagram" class="support-ig"> <a target="_blank">officialskyexchange</a> </div>
+          </div>
+        </div>
+        <div class="power-wrap">
+          <h3 id="powerWrapW"><span>Powered by</span><img src="images/logo-betfair.png"></h3>
+          <p>Skyfair is operated by Sky Infotech N.V. a limited liability company incorporated under the laws of Curacao with
+            company Registration number 152377 with registered office at Abraham de Veerstraat 9 , Curacao P.O Box 3421 and is licensed
+            and regulated by the Curacao authority as the regulatory body responsible holding a (Sub-license with License number 365/JAZ
+            Sub-License GLH- OCCHKTW0707072017 granted on 6.07.2017). <br>
+            Players are requested not to contact any untrusted sources for skyfair.com accounts as this is an online site and they can only
+            register independently without any agents. Only deposit through the account details generated by the system or provided by our
+            official support team. </p>
+        </div>
+        
+        <!-- Browser Support -->
+        <div class="browser-wrap"> <img src="images/login-a6.png"><br>
+          Our website works best in the newest and last prior version of these browsers: <br>
+          Google Chrome. Firefox </div>
+        <ul class="policy-link">
+          <li> <a >KYC</a> </li>
+          <li> <a >About Us</a> </li>
+          <li> <a >Privacy Policy</a> </li>
+          <li> <a >Responsible Gaming</a> </li>
+          <li> <a>Terms and Conditions</a> </li>
+          <li> <a >Underage Gaming Policy</a> </li>
+          <li> <a >Self-exclusion Policy</a> </li>
+          <li> <a>Rules and Regulations</a> </li>
+        </ul>
+      </div>
+      
+      <!--one click bets start-->
+      <div class="one_click-wrap one_click-wrap-design" id="two-id" style="display:none;">
+        <div class="overlay"></div>
+        <div class="dialog-wrap white-halo">
+          <h4>One Click Bet ON </h4>
+          <div class="dialog-content">
+            <p>Stake selected will be placed immediately once you click on the market odds. <br>
+              <span class="attention"> Attention: Back/Lay at your own risk</span></p>
+          </div>
+          <ul class="btn-wrap break">
+            <li><a class="btn-send">OK</a></li>
+          </ul>
+          <img class="arrow-dialog" src="images/arrow-dialog.png"> </div>
+        <div  class="one_click-setting">
+          <h4>Edit One Click Bet Stake </h4>
+          <ul class="one_click-stake">
+            <li>
+              <input type="text"  value="">
+            </li>
+            <li>
+              <input type="text" value="">
+            </li>
+            <li>
+              <input type="text"  value="">
+            </li>
+            <li>
+              <input type="text"  value="">
+            </li>
+          </ul>
+          <a  class="btn-send">Save </a> </div>
+      </div>
+      <!--one click bets end--> 
+      
+    </div>
+  </div>
+</div>
+<!--body section--> 
+
+<script>
+$("#accountPopup").click(function(){
+  $("#account_pop").toggle();
+});
+</script>
+<script>
+$(".one_click").on("click", function() { 
+    $(this).toggleClass('select');
+    $(this).parent().siblings().children().removeClass('select');
+});
+</script>
+
+<script type="text/javascript">	
+	$( "#one-id" ).click(function() {
+$( "#two-id" ).toggle();
+});
+</script>
+
+</body>
+</html>
